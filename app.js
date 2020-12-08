@@ -46,7 +46,10 @@ function generator(e) {
   } else {
     i++;
   }
+  text.innerText = quotes[i].quote;
   console.log(quotes[i].quote);
+  author.innerText = quotes[i].person;
+  console.log(quotes[i].person);
   e.preventDefault();
 }
 onClick.addEventListener('click', generator);
